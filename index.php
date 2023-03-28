@@ -82,6 +82,12 @@
 </body>
 </html>
 
+<?php
+$jsonRecipeData = file_get_contents('recipes.json');
+$recipeArray = json_decode($jsonRecipeData, true);
+print_r($recipeArray);
+?>
+
 <style>
 	/*
   font-family: 'Karma', serif;
